@@ -50,6 +50,15 @@ public class App {
         // Task de amanhã: salvar os dados no arquivo.
         // Task no GitHub (git e github)
         System.out.println("Nome:"+nome+","+"Meio do Transporte: "+meioTransporte);
-       
-    }
+        
+        try(FileWriter escritor = new FileWriter("dados.txt",true)){
+
+            escritor.write(nome+","+meioTransporte+"\n");
+            System.out.println("dados gravados com sucesso");
+
+        }catch(IOException e){
+            System.out.println("Erro ao gravar os dados"+e.getMessage());
+        }
+    
+      }
 }
