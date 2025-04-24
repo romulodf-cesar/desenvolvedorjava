@@ -16,7 +16,7 @@ public class App {
         System.out.println("Digite seu nome:");
         nome = scanner.nextLine();
         System.out.println(nome);
-        System.out.println("Como você vai ao trabalho?");
+        System.out.println("Como você vai ao trabalho hoje?");
         // utf-8 - João
         System.out.println("1-Metrô");
         System.out.println("2-Ônibus");
